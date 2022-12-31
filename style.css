@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #8A8A8A;
+}
+
+#title{
+    margin-top: 1.5em;
+    text-align: center;
+    font-size: 2em;
+}
+
+#description{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#survey-form{
+    background-color: #0A011A;
+    margin: 1em 1em;
+    padding: 1em 0;
+    border-radius: 10px;
+}
+
+.form-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    margin: 0.5em;
+    font-size: 1.5em;
+}
+
+.form-element label, h3{
+    color: #DADAFF;
+    font-weight: bold;
+    margin-left: 3em;
+}
+
+.form-element input:not([type="radio"]):not([type="checkbox"]), select, textarea{
+    background-color: #1A1A1A;
+    color: #DADAFF;
+    margin: 10px auto;
+    font-size: 0.75em;
+    width: 92%;
+}
+
+button{
+    width: 5em;
+    background-color: #1A1A1A;
+    color: #DADAFF;
+    text-align: center;
+    border: #DADAFF solid 1px;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-left: 3em;
+}
+
+@media (max-width: 425px){
+    .form-element{
+        font-size: 1.5em;
+        width: 90%;
+    }
+    .form-element label{
+        margin-left: 1em;
+    }
+}
+

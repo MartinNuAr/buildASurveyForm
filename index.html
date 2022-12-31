@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Student's Poll</title>
+</head>
+<body>
+    <h1 id="title">Student Survey Form</h1>
+    <p id="description">We'd like to hear your opinion. Please fill in the fields.</p>
+    <form action="./index.html" id="survey-form">
+        <div class="form-element">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name here" required />
+        </div>
+        <div class="form-element">
+            <label id="email-label" for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Enter your e-mail here" required />
+        </div>
+        <div class="form-element">
+            <label id="number-label" for="number">Semester (optional)</label>
+            <input type="number" name="semester" id="number" min="1" max="8" placeholder="Enter your semester (1-8)" />
+        </div>
+        <div class="form-element">
+            <label for="campus">Where do you study?</label>
+            <select name="campus" id="dropdown" required>
+                <option value="">Select an option</option>
+                <option value="n-campus">North campus</option>
+                <option value="e-campus">East campus</option>
+                <option value="w-campus">West campus</option>
+                <option value="s-campus">South campus</option>
+            </select>
+        </div>
+        <div class="form-element">
+            <h3>Gender:</h3>
+            <label for="gender-m"><input type="radio" name="gender" id="gender-m" value="male" required /> Male</label>
+            <label for="gender-f"><input type="radio" name="gender" id="gender-f" value="female" /> Female</label>
+            <label for="gender-f"><input type="radio" name="gender" id="gender-o" value="female" /> Other</label>
+        </div>
+        <div class="form-element">
+            <h3>Do you have any of the following equipment?</h3>
+            <label for="check-lap"><input type="checkbox" name="equipment" id="check-lap" value="laptop" /> Laptop</label>
+            <label for="check-smart"><input type="checkbox" name="equipment" id="check-smart" value="smartphone" /> Smartphone</label>
+            <label for="check-tablet"><input type="checkbox" name="equipment" id="check-tablet" value="tablet" /> Tablet</label>
+        </div>
+        <div class="form-element">
+            <label for="comments">Leave a comment:</label>
+            <textarea name="comments" id="comments" cols="20" rows="10"></textarea>
+        </div>
+        <div class="form-element">
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
